@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cavalo.cs" />
     <Compile Include="Gato.cs" />
     <Compile Include="Cachorro.cs" />
     <Compile Include="Moto.cs" />
