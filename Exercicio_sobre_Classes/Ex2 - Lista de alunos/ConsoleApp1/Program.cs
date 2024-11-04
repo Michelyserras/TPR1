@@ -33,15 +33,13 @@ namespace ConsoleApp1 {
                     case 2:
                         foreach(Aluno pessoa in Turma) {
                             situacao = pessoa.Situacao(pessoa);
-                            if(situacao == "Aprovado") {
+                            if (situacao == "Aprovado" && !Aprovado.Any(a => a.RA == pessoa.RA)) { // verifica se não há nenhum aluno com o mesmo ra na lista para não haver duplicações
                                 Aprovado.Add(pessoa);
-                            }
-                            else if (situacao == "Recuperação") {
+                            } else if (situacao == "Recuperação" && !Recuperacao.Any(a => a.RA == pessoa.RA)) {
                                 Recuperacao.Add(pessoa);
-                            }
-                            else if (situacao == "Reprovado") {
+                            } else if (situacao == "Reprovado" && !Reprovado.Any(a => a.RA == pessoa.RA)) {
                                 Reprovado.Add(pessoa);
-                           }
+                            }
                         }
 
                         Console.WriteLine("\n Alunos Aprovados: ");
