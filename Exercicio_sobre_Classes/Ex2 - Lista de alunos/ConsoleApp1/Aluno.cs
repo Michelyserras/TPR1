@@ -33,14 +33,23 @@ namespace ConsoleApp1 {
             return aluno;
         }
 
-        public string situacao(Aluno aluno){
+        public string Situacao(Aluno aluno) {
             double media = 0, soma =0;
             for(int i=0; i<aluno.Nota.Length; i++) {
                 soma += aluno.Nota[i];
             }
             media = soma / 4;
 
-            if()
+            if(media >= 6) {
+                return "Aprovado";
+            }
+            else if(media >= 4 && media < 6) {
+                return "Recuperação";
+            }
+            else if(media < 4) {
+                return "Reprovado";
+            }
+            return "Situação indefinida";
         }
 
     }

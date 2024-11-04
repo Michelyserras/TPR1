@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Runtime.Remoting.Metadata.W3cXsd2001;
@@ -11,25 +12,53 @@ namespace ConsoleApp1 {
     internal class Program {
         static void Main(string[] args) {
             int op = 0;
-            Aluno novoAluno = new Aluno();
+            String situacao = "";
             List<Aluno> Turma = new List<Aluno>();
-
+            List<Aluno> Aprovado = new List<Aluno>();
+            List<Aluno> Reprovado = new List<Aluno>();
+            List<Aluno> Recuperacao = new List<Aluno>();
             do {
                 op = menu();
 
                 switch (op) {
                     case 1:
-                        novoAluno = novoAluno.CadastrarAluno();
+                        Aluno novoAluno = new Aluno().CadastrarAluno();
                         Turma.Add(novoAluno);
+                        Console.WriteLine("Alunos cadastrados:");
+                        foreach (var aluno in Turma) {
+                            Console.WriteLine($"Nome: {aluno.Nome}, RA: {aluno.RA}");
+                        }
                         break;
+
                     case 2:
                         foreach(Aluno pessoa in Turma) {
-                            Console.WriteLine($"Ra: {pessoa.RA} \nNome: {pessoa.Nome}");
-                            for(int i=0; i<pessoa.Nota.Length; i++) {
-                                Console.WriteLine($"Nota {i + 1} = {pessoa.Nota[i]}");
+                            situacao = pessoa.Situacao(pessoa);
+                            if(situacao == "Aprovado") {
+                                Aprovado.Add(pessoa);
                             }
-                            Console.WriteLine();
+                            else if (situacao == "Recuperação") {
+                                Recuperacao.Add(pessoa);
+                            }
+                            else if (situacao == "Reprovado") {
+                                Reprovado.Add(pessoa);
+                           }
                         }
+
+                        Console.WriteLine("\n Alunos Aprovados: ");
+                        foreach(Aluno pessoa in Aprovado) {
+                            Console.WriteLine($"\n\tNome: {pessoa.Nome} Media: {(pessoa.Nota.Sum()) / 4}\n\t");
+                        }
+
+                        Console.WriteLine("\n Alunos Em Recuperação: ");
+                        foreach (Aluno pessoa in Recuperacao) {
+                            Console.WriteLine($"\n\tNome: {pessoa.Nome} Media: {(pessoa.Nota.Sum()) / 4}\n\t");
+                        }
+
+                        Console.WriteLine("\n Alunos Reprovados: ");
+                        foreach (Aluno pessoa in Reprovado) {
+                            Console.WriteLine($"\n\tNome: {pessoa.Nome} Media: {(pessoa.Nota.Sum()) / 4}\n\t");
+                        }
+  
                         break;
                     default:
                         break;
