@@ -23,7 +23,7 @@ namespace ConsoleApp1 {
             this.idade = idade;
             this.peso = peso;
         }
-        public void Latir() {
+        public void Miar() {
             MessageBox.Show("Miau Miau Miau Miau ...");
         }
 
