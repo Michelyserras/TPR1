@@ -45,6 +45,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Gato.cs" />
+    <Compile Include="Cachorro.cs" />
+    <Compile Include="Moto.cs" />
     <Compile Include="Carro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
