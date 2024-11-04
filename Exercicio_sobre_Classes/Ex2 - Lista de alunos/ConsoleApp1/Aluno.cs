@@ -33,13 +33,22 @@ namespace ConsoleApp1 {
             return aluno;
         }
 
-        public string Situacao(Aluno aluno) {
-            double media = 0, soma =0;
-            for(int i=0; i<aluno.Nota.Length; i++) {
-                soma += aluno.Nota[i];
-            }
-            media = soma / 4;
+        public double calcularMediaPonderada() {
+            int[] pesos = { 1, 1, 1, 7 };
+            double somaNotasPonderadas = 0;
+            int somaPesos = 0;
 
+            for (int i = 0; i < Nota.Length; i++) {
+                somaNotasPonderadas += Nota[i] * pesos[i]; // Multiplica a nota pelo peso
+                somaPesos += pesos[i]; // Soma os pesos
+            }
+
+            // Calcula a média ponderada
+            double mediaPonderada = somaNotasPonderadas / somaPesos;
+            return mediaPonderada;
+        }
+        public string Situacao(Aluno aluno) {
+            double media = calcularMediaPonderada(); 
             if(media >= 6) {
                 return "Aprovado";
             }
