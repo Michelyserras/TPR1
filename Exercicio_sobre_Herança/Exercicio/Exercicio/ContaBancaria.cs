@@ -22,7 +22,7 @@ namespace Exercicio
 
         }
 
-        public int Agecia
+        public int Agencia
         {
             get { return agencia; }
             set { agencia = value; }
@@ -46,9 +46,18 @@ namespace Exercicio
             set { titular = value; }
         }
 
-        public virtual double calcularNovoSaldo()
+        public virtual void creditar(double valor)
         {
-            return saldo;
+            this.saldo += valor;
         }
+        
+        public virtual void debitar(double valor)
+        {
+            if (valor <= this.saldo)
+            {
+                this.saldo -= valor;
+            }
+        }
+            
     }
 }

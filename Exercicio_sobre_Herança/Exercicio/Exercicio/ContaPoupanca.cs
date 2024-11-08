@@ -8,15 +8,24 @@ namespace Exercicio
 {
     internal class ContaPoupanca : ContaBancaria 
     {
-        private int taxaJuros;
+        private double taxaJuros;
         public ContaPoupanca(int agencia, int conta, double saldo, string titular) :base(agencia, conta, saldo, titular)
         {
-            taxaJuros = 0;
+            taxaJuros = 1.10;
         }
 
-        public double calcularNovoSaldo(double taxa, double novoSaldo)
+        public double TaxaJuros
         {
-            return this.Saldo += novoSaldo * (taxa/100);
+            get { return taxaJuros; }
+            set { taxaJuros = value; }
+        }
+
+
+        public override void creditar(double valor)
+        {
+            base.creditar(valor);
+            this.Saldo *= taxaJuros;
+            
         }
 
     }

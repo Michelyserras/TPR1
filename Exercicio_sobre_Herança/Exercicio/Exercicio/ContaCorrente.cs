@@ -8,29 +8,24 @@ namespace Exercicio
 {
     internal class ContaCorrente : ContaBancaria
     {
-        int taxaJuros;
+        private double taxaJuros;
 
         public ContaCorrente(int agencia, int conta, double saldo, string titular) : base(agencia, conta, saldo, titular)
         {
-            taxaJuros = 0;
+            this.taxaJuros = 1.10;
         }
 
-        public int TaxaJuros
+        public double TaxaJuros
         {
             get { return taxaJuros; }
             set { taxaJuros = value; }
         }
 
-        public double debitar(int taxa, double saque)
+        public override void debitar( double saque)
         {
-            if (this.Saldo > 0)
+            if (this.Saldo >= saque+taxaJuros)
             {
-                this.Saldo -= saque * (taxa/100); 
-                return this.Saldo;
-            }
-            else
-            {
-                return 0;
+                this.Saldo -= saque * taxaJuros; 
             }
         }
     }
