@@ -6,11 +6,16 @@ bin/
 obj/
 
 
+
 # Arquivos temporários
 *.user
 *.suo
 *.cache
 *.pdb
+
+# Arquivo que eu acho que deve ser ignorado
+slnx.sqlite
+*.sqlite
 
 
 
