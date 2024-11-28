@@ -1,0 +1,14 @@
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\bin\Debug\net8.0\SistemaVenda.exe
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\bin\Debug\net8.0\SistemaVenda.deps.json
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\bin\Debug\net8.0\SistemaVenda.runtimeconfig.json
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\bin\Debug\net8.0\SistemaVenda.dll
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\bin\Debug\net8.0\SistemaVenda.pdb
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.AssemblyInfoInputs.cache
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.AssemblyInfo.cs
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.csproj.CoreCompileInputs.cache
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.dll
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\refint\SistemaVenda.dll
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.pdb
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\SistemaVenda.genruntimeconfig.cache
+C:\Users\aluno\source\repos\SistemaVenda\SistemaVenda\obj\Debug\net8.0\ref\SistemaVenda.dll
