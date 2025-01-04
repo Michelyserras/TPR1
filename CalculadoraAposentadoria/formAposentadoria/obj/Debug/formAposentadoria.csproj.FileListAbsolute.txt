@@ -1,0 +1,10 @@
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.csproj.AssemblyReference.cache
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.Form1.resources
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.Properties.Resources.resources
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.csproj.GenerateResource.cache
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.csproj.CoreCompileInputs.cache
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\bin\Debug\formAposentadoria.exe.config
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\bin\Debug\formAposentadoria.exe
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\bin\Debug\formAposentadoria.pdb
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.exe
+C:\Users\miche\OneDrive\Documentos\TPR1-master\FormAposentadoria\formAposentadoria\obj\Debug\formAposentadoria.pdb
