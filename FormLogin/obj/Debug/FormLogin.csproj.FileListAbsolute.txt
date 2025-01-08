@@ -1,0 +1,10 @@
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\bin\Debug\FormLogin.exe.config
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\bin\Debug\FormLogin.exe
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\bin\Debug\FormLogin.pdb
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.csproj.AssemblyReference.cache
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.Form1.resources
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.Properties.Resources.resources
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.csproj.GenerateResource.cache
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.csproj.CoreCompileInputs.cache
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.exe
+C:\Users\miche\OneDrive\Documentos\Pessoal\FormLogin\obj\Debug\FormLogin.pdb
